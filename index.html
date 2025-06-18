@@ -2,53 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karma High School</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1> KARMA HIGH SCHOOL </h1>
-    <nav>
+    <div class="top-bar">
+      <span>7:02 PM | 0.0KB/s</span>
+      <span>📶 5G+ 🔋31%</span>
+    </div>
+    <div class="nav-bar">
+      <div class="logo">🏫</div>
+      <div class="url">Karma High School</div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav id="navMenu">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#">The School</a></li>
         <li><a href="#">Academics</a></li>
         <li><a href="#">Admissions</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Download</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Karma High School,Karma</h2>
-    <p>Empowering students for a better tomorrow.</p>
-  </section>
+  <main>
+    <div class="slider">
+      <img src="school.jpg" alt="Karma High School Building" id="sliderImage">
+      <div class="nav-arrows">
+        <button onclick="prevSlide()">⬅</button>
+        <button onclick="nextSlide()">➡</button>
+      </div>
+    </div>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>Karma High school is committed to excellence in education and holistic development.</p>
-  </section>
+    <section class="notice">
+      <h2>Important Notice:</h2>
+      <p><span style="color:red;">Timely evaluation.</span></p>
+    </section>
+  </main>
 
-  <section class="events">
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li>Annual Sports Day – July 5, 2025</li>
-      <li>Science Exhibition – August 12, 2025</li>
-      <li>Parent-Teacher Meeting – September 15, 2025</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: kumarpawan6878@gmail.com</p>
-    <p>Phone: +91-9693258038</p>
-    <p>Address:  Main Road Karma, Ramgarh, India</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Karma High School. All rights reserved.</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
